@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+  background-image: url('./wallpaper.png');
+  background-repeat: repeat;
+  font-family: 'Bebas Neue', cursive;
+}
+
+#root {
+  margin-top: 0;
+}
