@@ -102,9 +102,9 @@ class App extends React.Component {
             </div>
 
             <SuperButton setCredits = {this.setCredits}/>
-
+            
             <div className='footer'>
-               <p>Information about this game can be found from <a href='https://github.com/ArttuYlikotila'>github.com/ArttuYlikotila</a></p>
+               <p>Information about this game can be found from <a href='https://github.com/ArttuYlikotila/Push-the-button-game'>here</a></p>
             </div>
          </div>
       );
