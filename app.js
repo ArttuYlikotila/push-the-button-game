@@ -5,7 +5,12 @@ const app = express();
 
 let counter = 0;
 
-app.use(express.static(path.join(__dirname, 'client/build')));
+if (process.env.NODE_ENV !== 'production') {
+   app.use(express.static(path.join(__dirname, 'client/public')));
+}
+else {
+   app.use(express.static(path.join(__dirname, 'client/build')));
+}
 
 app.get('/click', (req, res) => {
    let reward = addCount();
@@ -33,8 +38,15 @@ function addCount() {
    }
 };
 
-app.get('*', (req, res) => {
-   res.sendFile(path.join(__dirname + '/client/build/index.html'));
-});
+if (process.env.NODE_ENV !== 'production') {
+   app.get('*', (req, res) => {
+      res.sendFile(path.join(__dirname + '/client/public/index.html'));
+   });
+}
+else {
+   app.get('*', (req, res) => {
+      res.sendFile(path.join(__dirname + '/client/build/index.html'));
+   });
+}
 
 app.listen(port, () => console.log(`Listening on port ${port}.`));
