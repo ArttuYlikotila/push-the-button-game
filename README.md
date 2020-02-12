@@ -7,7 +7,7 @@ This project is still a work in progress.
 TBD
 
 ## Game rules and logic
-A very simple game that is played in a web browser by pushing a button.
+This simple game is played in a web browser by pushing a button.
 Pushing the button costs always one credit. Player has a chance to get a 
 reward of extra credits when they push the button. Players start with 20
 credits. If a player runs out of credits, the game is over and the
