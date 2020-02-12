@@ -23,7 +23,7 @@ The game rewards the players with the following logic:
 
 The game is intended to be played with multiple players at the same time. Each player playing 
 the game is increasing the same server side counter that will determine if a reward is given.
-Because of potentially multiple players playing the at the same time, it might seem random 
+Because of potentially multiple players playing the game at the same time, it might seem random 
 when the game is giving a reward from a single players point of view. In essence this is a game
 of luck.
 
