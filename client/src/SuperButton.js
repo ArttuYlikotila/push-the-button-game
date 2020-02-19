@@ -1,6 +1,6 @@
 import React from 'react';
 import './SuperButton.css';
-import { showReward } from './messages';
+import { showReward } from './Messages';
 
 export default class SuperButton extends React.Component {
    constructor() {

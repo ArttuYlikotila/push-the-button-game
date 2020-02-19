@@ -3,7 +3,7 @@ import SuperButton from './SuperButton';
 import NextEstimate from './NextEstimate';
 import CreditStatus from './CreditStatus';
 import RestartButton from './RestartButton';
-import { newOrQuit } from './messages';
+import { newOrQuit } from './Messages';
 
 export default class Game extends React.Component {
    constructor(props) {
