@@ -1,0 +1,39 @@
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   min-height: 2.4em;
+   background: #000000;
+   color: white;
+   text-align: center;
+}
+ 
+.footer > p > a {
+   color: #dac3c3;
+   text-decoration: underline;
+}
+ 
+.footer > p > a:visited {
+   color: #dac3c3;
+   text-decoration: underline;
+}
+ 
+.footer > p {
+   font-size: 1.2em;
+   margin-top: 0.6em;
+   margin-bottom: 0.6em;
+   font-weight: normal;
+}
+
+@media screen and (max-width: 440px) {
+   .footer > p {
+      font-size: 1em;
+   }
+}
+
+@media screen and (max-width: 350px) {
+   .footer > p {
+      font-size: 0.9em;
+   }
+}

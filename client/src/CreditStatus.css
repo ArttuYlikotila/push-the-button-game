@@ -1,0 +1,30 @@
+.credits > p {
+   margin: auto;
+   margin-top: 0.2em;
+   text-align: center;
+   font-size: 1.8em;
+}
+
+@media screen and (max-width: 650px) {
+   .credits > p {
+      font-size: 1.5em;
+   }
+}
+
+@media screen and (max-width: 510px) {
+   .credits > p {
+      font-size: 1.2em;
+   }
+}
+
+@media screen and (max-width: 440px) {
+   .credits > p {
+      font-size: 1.1em;
+   }
+}
+
+@media screen and (max-width: 390px) {
+   .credits > p {
+      font-size: 1em;
+   }
+}

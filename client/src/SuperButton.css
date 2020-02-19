@@ -1,0 +1,76 @@
+.superbtn-container {
+   margin: auto;
+   margin-top: 1.6em;
+   max-width: 70%;
+   min-width: 0;
+   text-align: center;
+}
+
+#superbtn {
+   background-image: url('./btn.png');
+   width: 15em;
+   height: 15em;
+   font-family: 'Bebas Neue';
+   font-size: 1.5em;
+   color: #ffe6e6;
+   border: 0.6em solid;
+   border-color: black;
+   border-radius: 50%;
+   box-shadow: 2px 5px 17px 3px #999, 0px 1px 12px 3px #bb8b8b inset;
+
+   transition-duration: 0.3s;
+
+   user-select: none;
+   -moz-user-focus: none;
+   -webkit-user-select: none;
+   cursor: pointer;
+}
+
+#superbtn:active {
+   color: #686464;
+   font-size: 1.49em;
+   border: 0.61em solid;
+   border-color: black;
+   box-shadow: 0 1px 10px 3px #666,  1px 2px 15px 3px #312222 inset;
+   transform: translateY(1px);
+}
+
+#superbtn:focus {
+   outline: 0;
+}
+
+#superbtn:disabled {
+   background-image: none;
+   background-color: grey;
+   color: white;
+   box-shadow: 0 1px 10px 3px #666;
+}
+
+@media screen and (max-width: 550px) {
+   #superbtn {
+      width: 13em;
+      height: 13em;
+   }
+}
+
+@media screen and (max-width: 440px) {
+   #superbtn {
+      width: 11em;
+      height: 11em;
+      font-size: 1.5em;
+      font-weight: normal;
+      border: 0.5em solid;
+      border-color: black;
+   }
+}
+
+@media screen and (max-width: 360px) {
+   #superbtn {
+      width: 9em;
+      height: 9em;
+      font-size: 1.3em;
+      font-weight: normal;
+      border: 0.4em solid;
+      border-color: black;
+   }
+}

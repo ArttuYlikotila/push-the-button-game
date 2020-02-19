@@ -1,7 +1,7 @@
 import Swal from 'sweetalert2'
 
 export function newOrQuit(resetGame) {
-   // Ask if the player wants to start new game or quit and
+   // Ask if the player wants to start a new game or quit and
    // reset the game if player chooses to do so
    Swal.fire({
       title: 'Woe is upon you, you just used your last credit!',
@@ -47,7 +47,6 @@ export function showReward(reward) {
    Swal.fire({
       title: 'You got a reward of ' + reward + ' credits!',
       text: 'Click OK to continue game.',
-      footer: 'Next awesome reward could be ONLY 10 clicks away!',
       confirmButtonColor: '#000000',
       allowOutsideClick: false,
       allowEscapeKey: false,

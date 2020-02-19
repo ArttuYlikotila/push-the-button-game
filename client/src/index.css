@@ -2,9 +2,13 @@ body {
   margin: 0;
   background-image: url('./wallpaper.png');
   background-repeat: repeat;
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Bebas Neue';
 }
 
 #root {
   margin-top: 0;
+}
+
+#hidden {
+  display: none;
 }

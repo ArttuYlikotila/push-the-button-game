@@ -1,0 +1,48 @@
+.navbar {
+   margin-top: 0;
+   width: 100%;
+   background-color: #000000;
+   box-shadow: 0 3px 15px 0 rgb(81, 83, 83);
+}
+
+.navbar > h1 {
+   width: 100%;
+   color: white;
+   text-align: center;
+   margin-top: 0;
+   margin-bottom: 1.5em;
+   padding-top: 1em;
+   padding-bottom: 1em;
+   font-weight: normal;
+}
+
+
+@media screen and (max-width: 650px) {
+   .navbar > h1 {
+      font-size: 1.5em;
+   }
+}
+
+@media screen and (max-width: 510px) {
+   .navbar > h1 {
+      font-size: 1.2em;
+   }
+}
+
+@media screen and (max-width: 440px) {
+   .navbar > h1 {
+      font-size: 1.2em;
+   }
+}
+
+@media screen and (max-width: 390px) {
+   .navbar > h1 {
+      font-size: 1em;
+   }
+}
+
+@media screen and (max-width: 320px) {
+   .navbar > h1 {
+      font-size: 0.8em;
+   }
+}

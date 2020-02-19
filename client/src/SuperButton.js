@@ -1,36 +1,36 @@
 import React from 'react';
-import { showReward } from './Messages';
+import './SuperButton.css';
+import { showReward } from './messages';
 
-class SuperButton extends React.Component {
-   constructor(props) {
-      super(props);
- 
+export default class SuperButton extends React.Component {
+   constructor() {
+      super();
       this.updateCredits = this.updateCredits.bind(this);
    }
    
    // Function that updates the credits according to the response from the server
    updateCredits(event) {
       event.preventDefault();
- 
+
       // Ask the server if there is a reward
       fetch('/click').then(response => {
          if (response.ok) {
-            return response.text();
+            return response.json();
          }
          else {
             throw Error(`Request rejected with status ${response.status}`);
          }
-      }).then(reward => {
+      }).then(response => {
          // If there is a reward, show a message to user
-         if (reward !== '-1') {
-            showReward(reward);
-            // Update the users credits according to the reward minus one credit for the push
-            this.props.setCredits(parseInt(reward - 1));
+         if (response.reward !== 0) {
+            showReward(response.reward);
+            // Update the users credits according to the reward
+            this.props.setCredits(response.reward);
          }
-         else {
-            // Pay one credit for the push
-            this.props.setCredits(parseInt(reward));
-         }
+         // Pay one credit for the push
+         this.props.setCredits(-1);
+         // Update the amount estimated clicks for the next reward
+         this.props.setNextReward(response.estimate);
       },
          error => console.error(error)
       );
@@ -38,11 +38,9 @@ class SuperButton extends React.Component {
  
    render() {
       return (
-         <div className='btn-container'>
+         <div className='superbtn-container'>
             <button type='button' id='superbtn' onClick={this.updateCredits}>THE BUTTON</button>
          </div>
       )
    }
 }
-
-export default SuperButton;

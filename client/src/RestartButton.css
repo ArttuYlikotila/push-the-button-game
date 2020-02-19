@@ -1,0 +1,21 @@
+.btn-container {
+   margin: auto;
+   margin-top: 2em;
+   max-width: 70%;
+   text-align: center;
+}
+
+#reset {
+   background-color: #000000;
+   border: 1px solid;
+   color: white;
+   padding: 1em 1.5em;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 1.1em;
+   font-family: 'Bebas Neue';
+   border-radius: 4px;;
+   box-shadow: 1px 3px 4px 1px #666;
+   cursor: pointer;
+}
