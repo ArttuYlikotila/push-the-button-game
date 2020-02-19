@@ -13,7 +13,7 @@
    font-family: 'Bebas Neue';
    font-size: 1.5em;
    color: #ffe6e6;
-   border: 0.6em solid;
+   border: 0.55em solid;
    border-color: black;
    border-radius: 50%;
    box-shadow: 2px 5px 17px 3px #999, 0px 1px 12px 3px #bb8b8b inset;
@@ -58,7 +58,6 @@
    #superbtn {
       width: 11em;
       height: 11em;
-      font-weight: normal;
       border: 0.5em solid;
       border-color: black;
    }
@@ -68,8 +67,6 @@
    #superbtn {
       width: 10.5em;
       height: 10.5em;
-      font-size: 1.3em;
-      font-weight: normal;
       border: 0.4em solid;
       border-color: black;
    }
