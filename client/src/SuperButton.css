@@ -23,6 +23,7 @@
    user-select: none;
    -moz-user-focus: none;
    -webkit-user-select: none;
+   -webkit-tap-highlight-color: transparent;
    cursor: pointer;
 }
 
@@ -57,7 +58,6 @@
    #superbtn {
       width: 11em;
       height: 11em;
-      font-size: 1.5em;
       font-weight: normal;
       border: 0.5em solid;
       border-color: black;
@@ -66,8 +66,8 @@
 
 @media screen and (max-width: 360px) {
    #superbtn {
-      width: 9em;
-      height: 9em;
+      width: 10.5em;
+      height: 10.5em;
       font-size: 1.3em;
       font-weight: normal;
       border: 0.4em solid;
