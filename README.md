@@ -1,10 +1,13 @@
 # The amazing push-the-button-game
 
-This project is still a work in progress.
+This game is made with React, Node.js and Express.
+
+Game is responsive and can be played with mobile and desktop devices.
 
 ## Link to game
+Deployed version of the game running in Heroku:
 
-TBD
+https://push-button-game.herokuapp.com/
 
 ## Game rules and logic
 This simple game is played in a web browser by pushing a button.
@@ -32,4 +35,24 @@ if the players browser history is enabled.
 
 ## Installation
 
-TBD
+Pre-requisite:
+
+You need Node.js and NPM installed on your computer.
+
+- Clone or download this repository
+
+- Open a terminal (command line) in the root folder of the repository and run command `npm install`
+
+- Change folder by running command `cd client`
+
+- In the folder "client" run command `npm install`
+
+- Go back to the root folder by running command `cd ..`
+
+- In the root directory of the repository run command `node app.js`
+
+- Open another terminal in the folder "client"
+
+- In the folder "client" run command `npm start`
+
+- A local version of the game should start running in your web browser
