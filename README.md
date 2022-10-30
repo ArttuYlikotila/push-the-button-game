@@ -4,11 +4,6 @@ This game is made with React, Node.js and Express.
 
 Game is responsive and can be played with mobile and desktop devices.
 
-## Link to game
-Deployed version of the game running in Heroku:
-
-https://push-button-game.herokuapp.com/
-
 ## Game rules and logic
 This simple game is played in a web browser by pushing a button.
 Pushing the button costs always one credit. Player has a chance to get a 
